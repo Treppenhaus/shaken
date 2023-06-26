@@ -1,0 +1,2 @@
+# shaken
+simple permission plugin
