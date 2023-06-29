@@ -70,13 +70,9 @@ public class UserSubcommand implements ShakenSubcommand {
                     }
                 }
             }
-            else {
-                sender.sendMessage(getDescription());
-            }
+            else sender.sendMessage(getDescription());
         }
-        else {
-            sender.sendMessage(getDescription());
-        }
+        else sender.sendMessage(getDescription());
     }
     @Override
     public String getName() {
@@ -90,9 +86,10 @@ public class UserSubcommand implements ShakenSubcommand {
 
     @Override
     public String getDescription() {
-        return "/shaken user username group set/add/remove groupname\n" +
-                "/shaken user username permission add example.permission\n" +
-                "/shaken user username permission set example.permission true/false\n" +
-                "/shaken user username permission unset example.permission";
+        return """
+                /shaken user username group set/add/remove groupname
+                /shaken user username permission add example.permission
+                /shaken user username permission set example.permission true/false
+                /shaken user username permission unset example.permission""";
     }
 }

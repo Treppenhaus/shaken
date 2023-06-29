@@ -37,7 +37,8 @@ public class ShakenCommand implements CommandExecutor {
                 new UserinfoSubcommand(),
                 new CreateGroupSubcommand(),
                 new DeleteGroupSubcommand(),
-                new ListPlayerPermsSubcommand()
+                new ListPlayerPermsSubcommand(),
+                new GroupSubcommand()
         );
     }
 }

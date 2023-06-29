@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8313a28a-7ac4-40ad-b22b-d830085a6c6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/listeners/SetPlayerPermissions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="8313a28a-7ac4-40ad-b22b-d830085a6c6f" name="Changes" comment="player permissions working">
+      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/subcommands/GroupSubcommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/ShakenDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/ShakenDatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/ShakenPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/ShakenPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/ShakenCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/ShakenCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/subcommands/UserSubcommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/subcommands/UserSubcommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/listeners/SetDefaultGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/listeners/SetDefaultGroup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,8 +83,16 @@
       <workItem from="1687692915717" duration="1748000" />
       <workItem from="1687845421679" duration="53000" />
       <workItem from="1687845487463" duration="929000" />
-      <workItem from="1688018198236" duration="2854000" />
+      <workItem from="1688018198236" duration="5980000" />
     </task>
+    <task id="LOCAL-00001" summary="player permissions working">
+      <created>1688021100045</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688021100045</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="player permissions working" />
+    <option name="LAST_COMMIT_MESSAGE" value="player permissions working" />
   </component>
 </project>

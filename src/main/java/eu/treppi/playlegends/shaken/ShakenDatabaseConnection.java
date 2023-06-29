@@ -108,7 +108,7 @@ public class ShakenDatabaseConnection {
         ArrayList<ShakenGroupInfo> list = new ArrayList<>();
         try {
             Statement statement = getFreeConnection().createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM players where uuid = \""+uuid+"\"");
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM players WHERE uuid = \""+uuid+"\"");
 
             while (resultSet.next()) {
                 int groupID = resultSet.getInt("rankid");
@@ -184,7 +184,7 @@ public class ShakenDatabaseConnection {
     public boolean addPermissionToUser(Player player, String permission, boolean value) {
         try {
             SetPlayerPermissions.attachments.get(player.getUniqueId().toString()).setPermission(permission, value);
-            PreparedStatement statement = getFreeConnection().prepareStatement("INSERT INTO player_permissions (uuid, permission, value) values (?, ?, ?)");
+            PreparedStatement statement = getFreeConnection().prepareStatement("INSERT INTO player_permissions (uuid, permission, value) VALUES (?, ?, ?)");
             statement.setString(1, player.getUniqueId().toString());
             statement.setString(2, permission);
             statement.setBoolean(3, value);
@@ -193,6 +193,33 @@ public class ShakenDatabaseConnection {
             e.printStackTrace();
         } finally {
 
+        }
+        return false;
+    }
+
+    public boolean addPermissionToGroup(ShakenGroup group, String permission, boolean value) {
+         // todo: somehow refresh permissions for online users in group so the ydo not have to rejoin to take effect
+        try {
+            PreparedStatement statement = getFreeConnection().prepareStatement("INSERT INTO group_permissions (id, permission, value) VALUES (?, ?, ?)");
+            statement.setInt(1, group.getId());
+            statement.setString(2, permission);
+            statement.setBoolean(3, value);
+            return statement.executeUpdate() == 1;
+        }catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    public boolean unsetGroupPermission(ShakenGroup group, String permission) {
+        // todo: same like addPermissionToGroup()
+        try {
+            PreparedStatement statement = getFreeConnection().prepareStatement("DELETE FROM group_permissions WHERE id = ? AND permission = ?");
+            statement.setInt(1, group.getId());
+            statement.setString(1, permission);
+            return statement.executeUpdate() > 0;
+        }catch (SQLException e) {
+            e.printStackTrace();
         }
         return false;
     }
