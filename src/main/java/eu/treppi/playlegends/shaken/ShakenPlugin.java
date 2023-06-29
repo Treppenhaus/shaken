@@ -2,6 +2,7 @@ package eu.treppi.playlegends.shaken;
 
 import eu.treppi.playlegends.shaken.commands.ShakenCommand;
 import eu.treppi.playlegends.shaken.listeners.SetDefaultGroup;
+import eu.treppi.playlegends.shaken.listeners.SetPlayerPermissions;
 import eu.treppi.playlegends.shaken.test.PermcheckCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -27,6 +28,7 @@ public class ShakenPlugin extends JavaPlugin {
         // todo: extra method??
         PluginManager manager = Bukkit.getPluginManager();
         manager.registerEvents(new SetDefaultGroup(), this);
+        manager.registerEvents(new SetPlayerPermissions(), this);
 
         instance = this;
     }

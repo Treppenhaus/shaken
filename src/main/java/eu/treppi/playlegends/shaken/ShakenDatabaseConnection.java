@@ -1,5 +1,6 @@
 package eu.treppi.playlegends.shaken;
 
+import eu.treppi.playlegends.shaken.listeners.SetPlayerPermissions;
 import eu.treppi.playlegends.shaken.oop.ShakenGroup;
 import eu.treppi.playlegends.shaken.oop.ShakenGroupInfo;
 import org.bukkit.entity.Player;
@@ -167,8 +168,22 @@ public class ShakenDatabaseConnection {
         return false;
     }
 
+    public boolean unsetUserPermission(Player player, String permission) {
+        SetPlayerPermissions.attachments.get(player.getUniqueId().toString()).unsetPermission(permission);
+        try {
+            PreparedStatement statement = getFreeConnection().prepareStatement("DELETE FROM player_permissions WHERE uuid = ? AND permission = ?");
+            statement.setString(1, player.getUniqueId().toString());
+            statement.setString(2, permission);
+            return statement.executeUpdate() > 0;
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
     public boolean addPermissionToUser(Player player, String permission, boolean value) {
         try {
+            SetPlayerPermissions.attachments.get(player.getUniqueId().toString()).setPermission(permission, value);
             PreparedStatement statement = getFreeConnection().prepareStatement("INSERT INTO player_permissions (uuid, permission, value) values (?, ?, ?)");
             statement.setString(1, player.getUniqueId().toString());
             statement.setString(2, permission);

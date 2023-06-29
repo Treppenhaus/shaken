@@ -13,16 +13,9 @@ public class SetDefaultGroup implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
 
-        e.getPlayer().addAttachment(ShakenPlugin.getInstance()).getPermissions().forEach((per, val) -> {
-            ShakenPlugin.getInstance().getLogger().log(Level.INFO, per + " | " + val);
-        });
-
         //todo: put permissions into player attachment from database connection.GetUserPermissions()
         // also rename method
 
-
         ShakenGroupManager.checkForDefaultGroup(e.getPlayer());
-        PermissionAttachment a = e.getPlayer().addAttachment(ShakenPlugin.getInstance());
-        a.setPermission("test.joined.shaken", true);
     }
 }

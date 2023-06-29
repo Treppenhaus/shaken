@@ -5,33 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8313a28a-7ac4-40ad-b22b-d830085a6c6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaken.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/ShakenDatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/ShakenGroupManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/ShakenPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/ShakenCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/ShakenSubcommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/subcommands/CreateGroupSubcommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/subcommands/DeleteGroupSubcommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/subcommands/ListPlayerPermsSubcommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/subcommands/ListgroupsSubcommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/subcommands/UserSubcommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/subcommands/UserinfoSubcommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/listeners/SetDefaultGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/oop/ShakenGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/oop/ShakenGroupInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/test/PermcheckCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/listeners/SetPlayerPermissions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/ShakenDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/ShakenDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/ShakenPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/ShakenPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/subcommands/UserSubcommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/commands/subcommands/UserSubcommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/listeners/SetDefaultGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/treppi/playlegends/shaken/listeners/SetDefaultGroup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +34,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="MavenRunner">
     <option name="delegateBuildToMaven" value="true" />
   </component>
@@ -70,25 +45,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
   <component name="RunManager">
     <configuration name="ShakenPlugin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="eu.treppi.playlegends.shaken.ShakenPlugin" />
@@ -120,6 +85,9 @@
       <workItem from="1687608054333" duration="9134000" />
       <workItem from="1687623286926" duration="7521000" />
       <workItem from="1687692915717" duration="1748000" />
+      <workItem from="1687845421679" duration="53000" />
+      <workItem from="1687845487463" duration="929000" />
+      <workItem from="1688018198236" duration="2854000" />
     </task>
     <servers />
   </component>
@@ -129,6 +97,17 @@
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="java:net.kyori:adventure-api" />
     <option featureType="dependencySupport" implementationName="java:io.papermc.paper:paper-api" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

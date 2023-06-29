@@ -48,10 +48,25 @@ public class UserSubcommand implements ShakenSubcommand {
 
             }
             else if(args[2].equalsIgnoreCase("permission")) {
-                if(args[3].equalsIgnoreCase("add")) {
+                if(args[3].equalsIgnoreCase("set") || args[3].equalsIgnoreCase("add")) {
                     String permission = args[4];
-                    if(ShakenPlugin.getInstance().connection.addPermissionToUser(target, permission, true)) {
-                        sender.sendMessage("permission added successfully");
+                    boolean value = true;
+                    if(args.length > 5) {
+                        try {
+                            value = Boolean.parseBoolean(args[5]);
+                        } catch (Exception e) {
+                            sender.sendMessage("please provide true/false value");
+                            return;
+                        }
+                    }
+                    if(ShakenPlugin.getInstance().connection.addPermissionToUser(target, permission, value)) {
+                        sender.sendMessage("permission "+permission+" set to "+value);
+                    }
+                }
+                else if(args[3].equalsIgnoreCase("unset")) {
+                    String permission = args[4];
+                    if(ShakenPlugin.getInstance().connection.unsetUserPermission(target, permission)) {
+                        sender.sendMessage("unset permission "+permission);
                     }
                 }
             }
@@ -77,6 +92,7 @@ public class UserSubcommand implements ShakenSubcommand {
     public String getDescription() {
         return "/shaken user username group set/add/remove groupname\n" +
                 "/shaken user username permission add example.permission\n" +
-                "/shaken user username permission set example.permission true/false";
+                "/shaken user username permission set example.permission true/false\n" +
+                "/shaken user username permission unset example.permission";
     }
 }
